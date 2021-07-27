@@ -1,0 +1,29 @@
+http://localhost:3000/
+###
+
+http://localhost:3000/users
+
+###
+http://localhost:3000/users/1
+
+###
+
+POST http://localhost:3000/users/5
+
+###
+POST http://localhost:3000/users
+
+{  
+  "first_name":"Anna",
+  "last_name":"sung",
+  "email":"sundor@hanmail.net"
+}
+
+###
+POST http://localhost:3000/users
+
+{  
+  "first_name":"Jason",
+  "last_name":"Park",
+  "email":"jason@hanmail.net"
+}

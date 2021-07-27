@@ -1,0 +1,11 @@
+http://localhost:3000/
+###
+http://localhost:3000/bar?name=Ann
+###
+POSThttp://localhost:3000/foo
+
+{
+  "firstname":"junghwa",
+  "lastname":"sung",
+  "email":"sundor@hanmail.net"
+}

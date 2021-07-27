@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  <link rel="stylesheet" href="../css/join.css">
+  <!-- <script src="../js/login.js" defer></script> -->
+</head>
+<body>
+  <div class="join">
+    <div class="join-header">
+      <h1>Join</h1>
+    </div>
+    <div class="join-form">
+      <form action="http://localhost:8080/join" method="post">
+        <h3 class="join-mid">UserName:</h3>
+        <input type="text" name="name" id="name" placeholder="사용자명"/><br>
+        <h3>Id:</h3>
+        <input type="text" name="id" id="id" placeholder="아이디"/><br>
+        <h3>Password:</h3>
+        <input type="password" name="pwd" id="pwd" placeholder="비밀번호" autocomplete="password" required/>
+        <br>
+        <input type="submit" value="join" class="join-button"/>
+      </form>
+      <br>      
+    </div>
+  </div>
+</body>
+</html>
