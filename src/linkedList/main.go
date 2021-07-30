@@ -1,30 +1,21 @@
 package main
 
 import (
-	"container/ring"
 	"fmt"
 )
 
+const M = 10
+
+func hash(d int) int {
+	return d % M
+}
+
 func main() {
-	r := ring.New(5)
+	m := [M]int{}
 
-	n := r.Len()
-	
-	for i:=0; i<n; i++ {
-		r.Value = 'A'+i
-		r = r.Next()
-	}
+	m[hash(23)] = 10
+	m[hash(259)] = 50
 
-	for j := 0; j<n; j++ {
-		fmt.Printf("%c ", r.Value)
-		r = r.Next()
-	}
-
-	fmt.Println()
-
-	for j := 0; j<n; j++ {
-		fmt.Printf("%c ", r.Value)
-		r = r.Prev()
-	}
-	fmt.Println()
+	fmt.Printf("%d = %d\n", 23, m[hash(23)])
+	fmt.Printf("%d = %d\n", 259, m[hash(259)])
 }
